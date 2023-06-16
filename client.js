@@ -1,4 +1,3 @@
-const { Socket } = require('dgram');
 const net = require('net');
 
 const connect = function() {
@@ -14,7 +13,7 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('connection established');
     //write out my initials
-    conn.write('Name: BYY'); 
+    conn.write('Name: BYY');
     // setTimeout(() => conn.write('Move: right'), 50);
     // setTimeout(() => conn.write('Move: right'), 50);
     // setTimeout(() => conn.write('Move: right'), 50);
