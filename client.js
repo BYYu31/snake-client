@@ -1,9 +1,10 @@
 const net = require('net');
+const { IP, PORT } = require('./constants');
 
 const connect = function() {
   const conn = net.createConnection({
-    host: "localhost",
-    port: 50541
+    host: IP,
+    port: PORT
   });
 
   // interpret incoming data as text
@@ -18,20 +19,6 @@ const connect = function() {
     // setTimeout(() => conn.write('Move: right'), 50);
     // setTimeout(() => conn.write('Move: right'), 50);
     // setTimeout(() => conn.write('Move: right'), 50);
-  });
-
-  process.stdin.on('data', data => {
-    switch (data) {
-      case 'o':
-        conn.write('Says: ooooh');
-        break;
-      
-      case 'l':
-        conn.write('Says: loolz');
-        break;
-      case 'z':
-        conn.write('Says: snoozz')
-    }
   });
 
   //print out the data received from server
