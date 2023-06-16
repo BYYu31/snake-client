@@ -19,6 +19,12 @@ const handleUserInput = function(key) {
     case 'd':
       connection.write('Move: right');
       break;
+    case 'l':
+      connection.write('Say: lolllz');
+      break;
+    case 'z':
+      connection.write('Say: snooozz');
+      break;
   };
 };
 

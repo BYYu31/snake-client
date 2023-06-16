@@ -20,6 +20,20 @@ const connect = function() {
     // setTimeout(() => conn.write('Move: right'), 50);
   });
 
+  process.stdin.on('data', data => {
+    switch (data) {
+      case 'o':
+        conn.write('Says: ooooh');
+        break;
+      
+      case 'l':
+        conn.write('Says: loolz');
+        break;
+      case 'z':
+        conn.write('Says: snoozz')
+    }
+  });
+
   //print out the data received from server
   conn.on('data', data => console.log(data));
 
