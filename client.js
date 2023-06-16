@@ -15,10 +15,10 @@ const connect = function() {
     console.log('connection established');
     //write out my initials
     conn.write('Name: BYY'); 
-    setTimeout(() => conn.write('Move: right'), 50);
-    setTimeout(() => conn.write('Move: right'), 50);
-    setTimeout(() => conn.write('Move: right'), 50);
-    setTimeout(() => conn.write('Move: right'), 50);
+    // setTimeout(() => conn.write('Move: right'), 50);
+    // setTimeout(() => conn.write('Move: right'), 50);
+    // setTimeout(() => conn.write('Move: right'), 50);
+    // setTimeout(() => conn.write('Move: right'), 50);
   });
 
   //print out the data received from server
